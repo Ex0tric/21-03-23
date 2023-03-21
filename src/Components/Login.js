@@ -4,8 +4,11 @@ import './Login.css';
 
 const Login = () => {
   let {loginUser} = useContext(AuthContext)
+
+  document.title = 'Login'
   
-  return (<>
+  return (
+  <>
     <div className='sign-in-wrapper'>
       <div className="form-container">
         <div className="form-heading">
@@ -18,7 +21,7 @@ const Login = () => {
         <div className="form-group">
           <input type="password" name="password" placeholder="Enter Password"  className='password '/>
         </div>
-        <div className="form-group text-center">
+        <div className="text-center">
           <input type="submit" value='Sign In' className='sign-in-btn montserrat' />
         </div>
         </form>
